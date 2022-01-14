@@ -1,0 +1,266 @@
+*   {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #EE4D2D;
+    --primary-color-rgba: rgba(238, 75, 43);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --navbar-height: 34px;
+    --header-heihgt: 120px;
+    --star-gold-color: #ffce3e;
+    --header-with-search-height: calc(var(--header-heihgt) - var(--navbar-height));
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-size: .875rem;
+}
+.hv21op:hover {
+    opacity: 0.7;
+}
+.hover-cursor {
+    cursor: pointer;
+}
+.al-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.font_size {
+    font-size: .875rem;
+}
+.header {
+    background-image: linear-gradient(#ef4430,#f06230);
+}
+.container-navbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: flex;
+
+}
+
+.navbar-list {
+    display: flex;
+
+}
+.list_item, .item_dowload {
+    display: inline-block;
+    padding: 10px 0px;
+}
+.list_item > p {
+    padding: 0 10px;
+    color: var(--white-color);
+}
+._1baf::after {
+    content: "";
+    height: 15px;
+    border-left: 0.5px solid #f1705a;
+    border-right: 0.5px solid #f1705a;
+}
+.list_item > a, .item_dowload > a {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--white-color);
+}
+
+.icon-down {
+    margin: 1px;
+}
+.item_dowload {
+    position: relative;
+}
+.item_dowload:hover .modal-download {
+    display: block;
+}
+.modal-download {
+    display: none;
+    width: 190px;
+    margin-top: 7px;
+    background-color: var(--white-color);
+    position: absolute;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 0 2px var(--border-color);
+    z-index: 400;
+}
+.download-qr {
+    width: 95%;
+}
+.download-app {
+    text-align: center;
+}
+
+.navbar-space {
+    flex: 1;
+}
+.navbar-search {
+    display: flex;
+
+}
+.navbar-login {
+    display: flex;
+    align-items: center;
+}
+
+
+.container-width-search {
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: flex;
+}
+.width-search-logo {
+    text-align: center;
+}
+.img-logoshop {
+    width: 25%;
+    border-radius: 5px;
+}
+.form-search-form {
+    padding: 5px 0;
+}
+.form-enter-search {
+    height: 42px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+
+}
+.searchbar-focus {
+    display: inline;
+}
+.searchbar-input {
+    height: 42px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+.searchbar-btn {
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    width: 54px;
+    height: 35px;
+}
+.color-icon {
+    color: var(--white-color);
+}
+.searchbar-cart {
+    text-align: center;
+}
+.cart-icon {
+    color: var(--white-color);
+    margin: 7px 0;
+    padding: 3px;
+    font-size: 1.5rem;
+}
+
+.slide {
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: flex;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.slide-dot {
+    position: relative;
+    text-align: center;
+    margin: -20px;
+}
+.slide-top_img {
+    width: 98%;
+    margin: 0 5px;
+}
+.slide-bottom_img {
+    width: 98%;
+    margin: 5px;
+}
