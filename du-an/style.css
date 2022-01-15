@@ -264,3 +264,9 @@ img {vertical-align: middle;}
     width: 98%;
     margin: 5px;
 }
+
+.trend-search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
